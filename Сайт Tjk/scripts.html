@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<head>
+    <script src="scripts/scripts1.js"></script>
+    <div class = "block">
+    <div class = "header">
+    <h1 align=center> Лабораторная работа №9</h1>
+    </div>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Кафе, Starbucks">
+    <meta name="description" content="Заказать роллы">
+    <meta name="author" content="Абдулхаев">
+    <meta http-equiv="Content-Language" content="ru">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="scripts/scripts.js"></script>
+    <title>JavaScripts</title>
+</head>
+
+<body>
+    <div class="widget">
+        <ul class="widget-list">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="inform.html">О нас</a></li>
+          <li><a href="kont.html">Контакты</a></li>
+          <li><a href="sotr.html">Сотруники</a></li>
+          <li><a href="zakaz.html">Заказ</a></li>
+          <li><a href="karta.html">Карта сайта</a></li>
+          <li><a href="scripts.html">Скрипт1</a></li>
+          <li><a href="scripts1.html">Скрипт2</a></li>
+        </ul>
+      </div>
+    <main>
+                            <p>Вариант 1</p>
+                            <div class="script">
+                               <p> 1. Вычислить уравнение </p>
+                                <img src="images/z1.png" alt=""> <br>
+                                <input type="text" id="x" placeholder="Введите x">
+                                    <input type="text" id="y" placeholder="Введите y">
+                                    <p><button type="button" id="btn" >Вычислить</button> </p>
+                                    <div id="res"></div>
+                                <script>
+                                    btn.onclick = function() {
+                                    let x = document.getElementById('x').value;
+                                    let y = document.getElementById('y').value;
+                                    res = x - Math.sqrt((Math.pow(y, 2) + 2)/2) + 2 * Math.sin(y);
+                                    document.getElementById('res').innerHTML="Результат: "+res;
+                                    }
+                                    
+                                </script> <br>
+                            </div>
+                            <div class="script">
+                              <p>  2. Дана длина ребра куба a. Найти объем куба V = a^3 и площадь его поверхности S = 6*a^2. </p>
+                                
+                                <form name="arifm">
+                                   <p> <input type="text" id="a" placeholder="Введите длину куба"> </p>
+                                    <button type="button" id="btn1" >Вычислить</button>
+                                    <div id="str"></div>
+                                    <div id="str1"></div>
+                                </form>
+                                
+                                
+                                <script>
+                                    
+                                    btn1.onclick = function() {
+                                        let a = document.getElementById('a').value;
+                                        let v = Math.pow(a, 3);
+                                        let s = 6 * Math.pow(a, 2)
+                                        document.getElementById('str').innerHTML="Объем куба: "+v;
+                                        document.getElementById('str1').innerHTML="Площадь поверхности: "+s;
+                                    }
+                                    
+                                </script> <br>
+                            </div>
+                            <div class="script"> <br>
+                                <p>3. Даны 2 числа. Вывести большее из них. </p>
+                                
+                                <form name="arifm">
+                                    <input type="text" id="a2" placeholder="Введите первое число">
+                                    <input type="text" id="b2" placeholder="Введите второе число">
+                                    <p><button type="button" id="btn2" >Вычислить</button> </p>
+                                    <div id="str0"></div>
+                
+                                    
+                                    
+                                </form>
+                                
+                                
+                                <script> 
+                                    
+                                    btn2.onclick = function() {
+                                        let a = document.getElementById('a2').value;
+                                        let b = document.getElementById('b2').value;
+                
+                                        if (a > b) {
+                                            document.getElementById('str0').innerHTML="a: "+a;
+                                        }else if (a < b) {
+                                            document.getElementById('str0').innerHTML="b: "+b;
+                                        }else {
+                                            document.getElementById('str0').innerHTML="Числа равны!";
+                                        }
+                                    };
+                                    
+                                    
+                                </script> <br>
+                            </div>
+                
+                            <div class="script">
+                              <p>  4. Дано вещественное число - цена 1 кг конфет. Вывести стоимость 1, 2, ..., 10 кг конфет.</p>
+                                
+                                <form name="arifm">
+                                    <input type="text" id="cost" placeholder="Введите стоимость конфет">
+                                    <input type="text" id="items" placeholder="Введите КГ конфет"> 
+                                    <p><button type="button" id="btn4" >Вычислить</button> </p>
+                                    <div id="candy"></div>            
+                                    <div id="candy1"></div>       
+                                </form>
+                                
+                                
+                                <script>
+                                    
+                                    btn4.onclick = function() {
+                                        let kgCost = document.getElementById('cost').value;
+                                        let items = document.getElementById('items').value;
+                                        document.getElementById('candy').innerHTML='Цена 1 кг конфет - ' + kgCost + ' рублей';
+                                        for (var d = 1; d <= items; d+=1) {
+                                        document.getElementById('candy1').innerHTML='ЦЕНА за ' + d.toFixed(1) + ' килограмм ' + kgCost * d.toFixed(1) + ' рублей';
+                                        };
+                                    };
+                                    
+                                    
+                                </script>
+    </main>
+</div>
+<footer>
+    <div align = "right"><a href="#"><img src="images/up.png" heidth="80" width="80"></a></div>
+</footer>
+</body>

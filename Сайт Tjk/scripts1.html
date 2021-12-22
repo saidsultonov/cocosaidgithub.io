@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<head>
+    <script src="scripts/scripts1.js"></script>
+    <link href="css/scripts.css" rel="stylesheet" type="text/css">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Кафе, Starbucks">
+    <meta name="description" content="Заказать роллы">
+    <meta name="author" content="Абдулхаев">
+</head>
+<body>
+
+    <h1>Лабораторная работа №10</h1>
+    <div class="widget">
+        <ul class="widget-list">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="inform.html">О нас</a></li>
+          <li><a href="kont.html">Контакты</a></li>
+          <li><a href="sotr.html">Сотруники</a></li>
+          <li><a href="zakaz.html">Заказ</a></li>
+          <li><a href="karta.html">Карта сайта</a></li>
+          <li><a href="scripts.html">Скрипт1</a></li>
+          <li><a href="scripts1.html">Скрипт2</a></li>
+        </ul>
+        <p id="p1">Hello, world!</p>
+        <br><b><i>Размер шрифта: </i></b>
+        <p>
+        <input type="Button" value="55%" onclick="modification(1);">
+        <input type="Button" value="62%" onclick="modification(2);">
+        <input type="Button" value="58%" onclick="modification(3);">
+        <input type="Button" value="54%" onclick="modification(4);">
+        <input type="Button" value="65%" onclick="modification(5);">
+        <input type="Button" value="60%" onclick="modification(6);">
+        <input type="Button" value="70%" onclick="modification(7);">
+        <input type="Button" value="51%" onclick="modification(8);">
+        <input type="Button" value="69%" onclick="modification(9);">
+        <input type="Button" value="64%" onclick="modification(10);">
+        <input type="Button" value="100%" onclick="modification(10);">
+        </p>
+        <script language="JavaScript">
+        function modification(action){
+        if(action==1){
+        document.all["p1"].style.fontSize="55%";}
+        if(action==2){
+        document.all["p1"].style.fontSize="62%";}
+        if(action==3){
+        document.all["p1"].style.fontSize="58%";}
+        if(action==4){
+        document.all["p1"].style.fontSize="54%";}
+        if(action==5){
+        document.all["p1"].style.fontSize="65%";}
+        if(action==6){
+        document.all["p1"].style.fontSize="60%";}
+        if(action==7){
+        document.all["p1"].style.fontSize="70%";}
+        if(action==8){
+        document.all["p1"].style.fontSize="51%";}
+        if(action==9){
+        document.all["p1"].style.fontSize="69%";}
+        if(action==10){
+        document.all["p1"].style.fontSize="64%";}
+        if(action==10){
+        document.all["p1"].style.fontSize="100%";}
+    }
+    </script>
+        <b><i>Цвет фона: </i></b>
+        <input type="Button" value="Белый" onclick="cngBg('white');">
+        <input type="Button" value="Желтый" onclick="cngBg('yellow');">
+        <input type="Button" value="Оливковый" onclick="cngBg('olive');">
+        <script language="JavaScript">
+            function cngBg(clr){
+            document.bgColor=clr;
+            }
+        </script>
+       </div>
+    
+</body>
